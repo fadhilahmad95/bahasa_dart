@@ -1,17 +1,22 @@
 void main() {
   Ewallet ewallet = Ewallet(namaPemilik: "Agus Hidayat");
-
+  print("Info Rekening");
   print(ewallet.getPemilik);
   print(ewallet.getSaldo);
   print(ewallet.getMutasi);
-  ewallet.requst(20000);
-  print(ewallet.getSaldo);
-  print(ewallet.getMutasi);
-  ewallet.tranfer(5000);
-  print(ewallet.getSaldo);
-  print(ewallet.getMutasi);
-  print(ewallet.getMutasi);
   ewallet.getMutasi.clear();
+  print("=================");
+  print("Saldo Masuk Ke Dalam Rekening");
+  print(ewallet.getPemilik);
+  ewallet.requst(500000);
+  print(ewallet.getSaldo);
+  print(ewallet.getMutasi);
+  print("=================");
+  print("Saldo Keluar Dari Rekening");
+  print(ewallet.getPemilik);
+  ewallet.tranfer(200000);
+  print(ewallet.getSaldo);
+  print(ewallet.getMutasi);
 }
 
 class Ewallet {
