@@ -4,6 +4,14 @@ void main() {
   print(ewallet.getPemilik);
   print(ewallet.getSaldo);
   print(ewallet.getMutasi);
+  ewallet.requst(20000);
+  print(ewallet.getSaldo);
+  print(ewallet.getMutasi);
+  ewallet.tranfer(5000);
+  print(ewallet.getSaldo);
+  print(ewallet.getMutasi);
+  print(ewallet.getMutasi);
+  ewallet.getMutasi.clear();
 }
 
 class Ewallet {
@@ -41,9 +49,16 @@ class Ewallet {
 
   tranfer(int nominal) {
     saldo = saldo - nominal;
+    addMutasi("Transfer $nominal");
   }
 
+  // buat tambahkan histori pada mutasi mengenai tranfer dan requst
   addMutasi(String transaksi) {
     mutasi.add(transaksi);
+  }
+
+  requst(int nominal) {
+    saldo = saldo + nominal;
+    addMutasi("Requst $nominal");
   }
 }
