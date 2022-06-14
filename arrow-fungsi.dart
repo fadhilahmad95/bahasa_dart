@@ -1,5 +1,5 @@
 void main() {
-  perkenalan("Rifqi");
+  perkenalan("Hinata Shoyo");
   print(kali(2, 6));
 }
 
