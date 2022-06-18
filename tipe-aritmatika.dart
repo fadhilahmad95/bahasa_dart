@@ -9,6 +9,13 @@ void main() {
   var bagi = a / b;
   var sisBagi = a % b;
 
+  int g = 5;
+  int h = 4;
+
+  var z = g % h;
+
+  print(z);
+
   print(tambah.toString() + " " + kurang.toString() + " " + kali.toString());
   print(bagi.toString() + " " + sisBagi.toString());
 

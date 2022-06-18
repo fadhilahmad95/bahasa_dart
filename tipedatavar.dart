@@ -7,10 +7,12 @@ void main() {
     'tags': ['saturn'],
     'url': '//path/to/saturn.jpg'
   };
+  var isHujan = false;
 
   print("Name : $name");
   print("Tahun : ${year}");
   print(antennaDiameter);
   print("Daftar Planet : ${flybyObjects[1]}");
   print(image);
+  print(isHujan);
 }

@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main() {
   // kondisi -> true -> jalankan code true
   // kondisi -> false -> jalankan code false
@@ -20,5 +22,13 @@ void main() {
     print("Selamat Datang Kelas Dicoding");
   } else {
     print("Anda Tidak Memiliki Kelas");
+  }
+
+  int? number = int.tryParse(stdin.readLineSync()!);
+
+  if (number! > 0) {
+    print("positif");
+  } else {
+    print("nol");
   }
 }
